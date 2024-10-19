@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 35%;
+  min-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: #20232a;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.container h1 {
+  margin: 1rem 0 2rem;
+  font-size: 40px;
+}
+
+.time-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  padding: 10px;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-unit .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #888;
+}
+
+.separator {
+  font-size: 36px;
+}
+
+.hours,
+.minutes,
+.seconds,
+.milliseconds {
+  margin: 0 5px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.hours {
+  border-color: #c37984;
+}
+
+.minutes {
+  border-color: #317081;
+}
+
+.seconds {
+  border-color: #138282;
+}
+
+.milliseconds {
+  border-color: #5d8bda;
+}
+
+.controls button {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 5px 10px;
+  border: none;
+  /* border-style: inset; */
+  border-radius: 50%;
+  /* background-color: #035d8d; */
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+button i {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+button.btn-face {
+  background-color: #da5065;
+  /* border: 2px solid #da5065; */
+}
+
+button.btn-face1 {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.controls button:hover {
+  scale: 1.02;
+}
+
+.laps {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.lap {
+  width: 200px;
+  /* border-bottom: 1px solid green; */
+  margin: 5px auto;
+  padding: 10px;
+  color: green;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
